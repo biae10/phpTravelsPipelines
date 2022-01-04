@@ -1,10 +1,8 @@
-pool:
-  vmImage:  'unbutu-latest'
-
 on:  workflow_dispatch
-
 
 jobs:
 - job: Bianca
+  pool:
+    vmImage:  'unbutu-latest'
   steps:
-  - script: echo teste bianca
+    - script: echo teste bianca
