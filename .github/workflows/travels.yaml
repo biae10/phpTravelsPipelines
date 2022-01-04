@@ -6,8 +6,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Log baixando repositório
-        run: echo ---------- Baixando repositório ---------
+
+      - name: Instalar python
+        uses: actions/setup-python@v2.3.1
+        with: 3.9.9
 
       - name: Baixando o repositório
         uses: actions/checkout@v2.4.0
