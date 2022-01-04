@@ -1,4 +1,4 @@
-name: pipeline de estudos
+name: Suite Voo
 on:  workflow_dispatch
 
 jobs:
@@ -12,7 +12,20 @@ jobs:
         with:
           python-version: '3.9.9'
 
+      - name: Instalar Robot Framework e Selenium
+        run: |
+          pip install robotframework
+          pip install robotframework-seleniumlibrary
+
       - name: Baixando o repositório
         uses: actions/checkout@v2.4.0
+
+      - name: Executar teste
+        run:  robot -d Results Tests/Voo
       
+      - name: Publicar artefatos
+        uses: actions/upload-artifact@v2
+        with: 
+          name: Log suite voo
+          path: Results
       
