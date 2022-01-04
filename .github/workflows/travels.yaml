@@ -9,6 +9,4 @@ jobs:
       - name: Log baixando repositório
         run: echo ---------- Baixando repositório ---------
       
-     - name: Baixando o repositório
-       uses: actions/checkout@v2.4.0
       
