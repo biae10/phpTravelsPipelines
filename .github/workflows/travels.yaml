@@ -1,5 +1,11 @@
 name: Suite Voo
-on:  workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      Suite:
+        description: 'Informa qual será a suite executada'
+        required: true
+        default:  'Voo'
 
 jobs:
   job1:
@@ -21,7 +27,7 @@ jobs:
         uses: actions/checkout@v2.4.0
 
       - name: Executar teste
-        run:  robot -d Results Tests/Voo
+        run:  robot -d Results Tests/${{ github.event.inputs.Suite }}
       
       - name: Publicar artefatos
         uses: actions/upload-artifact@v2
