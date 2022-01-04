@@ -1,0 +1,38 @@
+name: TC especifico suite Voo
+on:  
+  workflow_dispatch:
+    inputs:
+      TC:
+        description: 'Número do caso de teste que será executado'
+        required: true
+        default:  'TC01'
+
+jobs:
+  job1:
+    runs-on: windows-latest
+
+    steps:
+
+      - name: Instalar python
+        uses: actions/setup-python@v2.3.1
+        with:
+          python-version: '3.9.9'
+
+      - name: Instalar Robot Framework e Selenium
+        run: |
+          pip install robotframework
+          pip install robotframework-seleniumlibrary
+
+      - name: Baixando o repositório
+        uses: actions/checkout@v2.4.0
+
+      - name: Executar teste
+        run:  robot -d Results Tests/Voo/${{ github.event.inputs.name }}.robot
+      
+      - name: Publicar artefatos
+        uses: actions/upload-artifact@v2
+        if: always()
+        with: 
+          name: Log TC voo
+          path: Results
+      
