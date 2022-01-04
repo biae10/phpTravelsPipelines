@@ -5,5 +5,6 @@ jobs:
     runs-on: unbutu-latest
 
     steps:
-      - name: teste de bianca scrr
       - run: echo teste bianca
+      - name: teste de bianca scrr
+      
