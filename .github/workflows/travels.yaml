@@ -25,6 +25,7 @@ jobs:
       
       - name: Publicar artefatos
         uses: actions/upload-artifact@v2
+        if: always()
         with: 
           name: Log suite voo
           path: Results
