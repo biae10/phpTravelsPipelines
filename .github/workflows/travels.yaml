@@ -2,7 +2,7 @@ on:  workflow_dispatch
 
 jobs:
   job1:
-    runs-on: unbutu-latest
+    runs-on: windows-latest
 
     steps:
       - name: teste de bianca scrr
