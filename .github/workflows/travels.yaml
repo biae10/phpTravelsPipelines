@@ -5,6 +5,6 @@ on:  workflow_dispatch
 
 
 jobs:
-  - job: Bianca
-      steps:
-        - script: echo teste bianca
+- job: Bianca
+  steps:
+  - script: echo teste bianca
