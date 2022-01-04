@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v2.4.0
 
       - name: Executar teste
-        run:  robot -d Results Tests/Voo/${{ github.event.inputs.name }}.robot
+        run:  robot -d Results Tests/Voo/${{ github.event.inputs.TC }}.robot
       
       - name: Publicar artefatos
         uses: actions/upload-artifact@v2
