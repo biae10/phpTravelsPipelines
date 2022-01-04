@@ -1,0 +1,9 @@
+pool:
+  vmImage:  'unbutu-latest'
+
+trigger:
+  - workflow_dispatch
+
+Steps:
+  Script:  echo  teste pipeline
+  displayName: testando estrutura da pipelne
