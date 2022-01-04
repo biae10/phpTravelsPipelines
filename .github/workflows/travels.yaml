@@ -1,8 +1,7 @@
 pool:
   vmImage:  'unbutu-latest'
 
-trigger:
-  - workflow_dispatch
+on:  workflow_dispatch
 
 Steps:
   Script:  echo  teste pipeline
