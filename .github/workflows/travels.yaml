@@ -3,6 +3,8 @@ pool:
 
 on:  workflow_dispatch
 
-Steps:
-  Script:  echo  teste pipeline
-  displayName: testando estrutura da pipelne
+jobs:
+  - job: Teste de job
+      steps:
+        - script:  echo  teste pipeline
+          displayName: testando estrutura da pipelne
