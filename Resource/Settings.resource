@@ -5,7 +5,7 @@ Library  SeleniumLibrary
 *** Variables ***
 #Dados gerais
 ${URL}  https://www.phptravels.net/
-${Browser}  chrome
+${Browser}  headlesschrome
 
 #Dados do teste
 ${PrimeiroNome}  Edward

@@ -6,7 +6,8 @@ Resource  ../../Elements/Main_Elements.resource
 *** Keywords ***
 Dado que eu acesse o php travels
     Open Browser  ${URL}  ${Browser}
-    Maximize Browser Window
+    #Maximize Browser Window
+    Set Window Size  1400    600
 
 E realize o cadastro
     Wait Until Element Is Visible      ${Home.A_Signup}            10
