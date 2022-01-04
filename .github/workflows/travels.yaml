@@ -11,6 +11,5 @@ jobs:
 
       - name: Baixando o repositório
         uses: actions/checkout@v2.4.0
-        with: actions/checkout
       
       
