@@ -5,4 +5,4 @@ jobs:
     runs-on: unbutu-latest
 
     steps:
-      - script: echo teste bianca
+      run: echo teste bianca
