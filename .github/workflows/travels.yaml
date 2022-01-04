@@ -6,6 +6,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: teste de bianca scrr
-        run: echo teste bianca
+      - name: baixar repositório
+        run: ---------- Baixando repositório ---------
+      
+     - name:
+       uses: actions/checkout@v2.4.0
+       with: actions/checkout
       
