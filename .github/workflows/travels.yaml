@@ -1,4 +1,4 @@
-name: Suite Voo
+name: Executar Suite
 on:
   workflow_dispatch:
     inputs:

@@ -1,4 +1,4 @@
-name: TC especifico suite Voo
+name: Executar teste especifico 
 on:  
   workflow_dispatch:
     inputs:
