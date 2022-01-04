@@ -3,8 +3,8 @@ pool:
 
 on:  workflow_dispatch
 
+
 jobs:
-  - job: Teste de job
+  - job: Bianca
       steps:
-        - script:  echo  teste pipeline
-          displayName: testando estrutura da pipelne
+        - script: echo teste bianca
