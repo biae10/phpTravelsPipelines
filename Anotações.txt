@@ -1,0 +1,20 @@
+Estrutura do YAML
+
+trigger - É utilizado para setar qual será o gatilho da pipeline, ou seja,
+qual será o motivo para que a pipeline execute ?
+Ele pode ter gatilho de branch, ex:
+
+trigger:
+- master
+
+
+----------------------------------------
+pool - Indica qual é o agent que será utilizado na pipeline.
+O agent é qual a máquina em que a pipeline será executada. E pode ser um agent
+do próprio servidor (github, azure, gitlab) ou um autohospedado (sua máquina).
+Ex(máquina do servidor):
+
+pool:
+    vmImage: 'unbutu-latest'
+
+-------------------------------------------
